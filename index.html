@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Render all elements normally -->
+    <!-- <link rel="stylesheet" href="./style/Normalize.css" /> -->
+    <!-- Font Awesome Library -->
+    <!-- <link rel="stylesheet" href="./style/all.min.css" /> -->
+    <title>BANKIST</title>
+    <link rel="icon" href="./img/icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="#">
+            <img src="./img/logo.png" alt="logo" />
+          </a>
+        </div>
+        <ul class="nav">
+          <li>
+            <a href="#fectures">Fectures</a>
+          </li>
+          <li><a href="#operation">Operation</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li class="open-btn active" onclick="openModal()">
+            <a href="#open-account">Open account</a>
+          </li>
+        </ul>
+      </header>
+      <div class="section landing" id="landing">
+        <div>
+          <img src="./img/hero.png" alt="landing-page" />
+        </div>
+        <div class="content">
+          <h1>When banking meets minimalist</h1>
+          <p>A Simpler banking experience for a simpler life.</p>
+          <a href="#fectures">Learn more <span>⬇</span></a>
+        </div>
+      </div>
+      <div class="section fectures" id="fectures">
+        <div class="head-fectures">
+          <p>FECTURES</p>
+          <h2>Everything you need in a modern bank and more.</h2>
+        </div>
+        <div class="content-fectures">
+          <div>
+            <img src="./img/digital.jpg" alt="digital" />
+          </div>
+          <div class="txt one">
+            <h3>100% digital bank</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              voluptate reiciendis voluptatum, laudantium vero neque ipsam
+              similique.
+            </p>
+          </div>
+        </div>
+        <div class="content-fectures">
+          <div class="txt one two">
+            <h3>Watch your mony grow</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              voluptate reiciendis voluptatum laudantium vero, dolor sit amet
+              consectetur.
+            </p>
+          </div>
+          <div class="img-fectures">
+            <img src="./img/grow.jpg" alt="grow" />
+          </div>
+        </div>
+        <div class="content-fectures">
+          <div>
+            <img src="./img/card.jpg" alt="card" />
+          </div>
+          <div class="txt one">
+            <h3>Free debit card included</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+              voluptate reiciendis voluptatum, laudantium vero neque ipsam
+              similique.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="section operation" id="operation">
+        <div class="head-operation">
+          <p>OPERATION</p>
+          <h2>Everything as simple as possible, but no simpler.</h2>
+        </div>
+        <div class="content-operation">
+          <ul>
+            <li class="oper oper-1" data-tab="1">01 Instant Transfers</li>
+            <li class="oper oper-2" data-tab="2">02 Instant Loans</li>
+            <li class="oper oper-3" data-tab="3">03 Instant Closing</li>
+          </ul>
+          <div class="opera">
+            <div id="step-1" class="operas one-opera step active-1">
+              <h4>Transfer money to anyone, instantly! No fees, no BS</h4>
+              <p>
+                tempore odit officia modi ducimus, reiciendis quaerat tempora id
+                dolorum temporibus illo eligendi doloribus quibusdam
+                accusantium, Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Sunt ex dolor.
+              </p>
+            </div>
+            <div id="step-2" class="operas two-opera step">
+              <h4>
+                Buy a home or make your dreems come true, with instant loans.
+              </h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                ex dolor, tempore odit officia modi ducimus, reiciendis quaerat
+                tempora id dolorum temporibus illo eligendi doloribus quibusdam
+                accusantium.
+              </p>
+            </div>
+            <div id="step-3" class="operas three-opera step">
+              <h4>
+                No longer need your account? No problem! Close it instantly.
+              </h4>
+              <p>
+                consectetur adipisicing elit. Sunt ex dolor, tempore odit
+                officia modi ducimus, reiciendis quaerat tempora id dolorum
+                temporibus illo eligendi doloribus ,Lorem ipsum dolor sit amet,
+                quibusdam accusantium.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="testimonials" class="section testimonials">
+        <div class="head-testimonials">
+          <p>TESTIMONIALS</p>
+          <h2>Millions of Bankists are already making their life simpler.</h2>
+        </div>
+
+        <div class="slider-container">
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+
+          <div class="slider">
+            <div class="slide">
+              <div class="slide-content">
+                <p class="quote"><span>"</span>Best financial decision ever!</p>
+                <p class="text">
+                  Quisquam itaque deserunt ullam, quia ea repellendus provident,
+                  aliquam neque ipsum modi voluptatem doloreque ,Quisquam itaque
+                  deserunt ullam, quia ea repellendus provident, aliquam neque
+                  ipsum modi voluptatem doloreque repellendus provident, aliquam
+                  neque.
+                </p>
+                <div class="author">
+                  <img src="./img/user-1.jpg" alt="user-1" />
+                  <div>
+                    <h4>Aarav Lynn</h4>
+                    <span>London, UK</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-content">
+                <p class="quote">
+                  <span>"</span>The last step to becoming a complete minimalist
+                </p>
+                <p class="text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Iusto praesentium eveniet neque voluptatem molestias, deserunt
+                  ullam, quia ea repellendus provident, aliquam neque ipsum modi
+                  voluptatem doloreque repellendus provident, aliquam neque.
+                </p>
+                <div class="author">
+                  <img src="./img/user-2.jpg" alt="user-2" />
+                  <div>
+                    <h4>Miyah Miles</h4>
+                    <span>New York, USA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-content">
+                <p class="quote">
+                  <span>"</span>Finally free from old-school banks
+                </p>
+                <p class="text">
+                  Aenean volutpat ligula et orci efficitur, at bibendum lorem
+                  molestie. Integer vel nisl at justo tincidunt, eveniet neque
+                  voluptatem molestias, deserunt ullam, quia ea repellendus
+                  provident, aliquam neque ipsum modi voluptatem doloreque.
+                </p>
+                <div class="author">
+                  <img src="./img/user-3.jpg" alt="user-3" />
+                  <div>
+                    <h4>Francisco Gomes</h4>
+                    <span>Paris, France</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+
+          <div class="dots">
+            <span class="dot active-3" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="content-footer">
+          <h2>
+            The best day to join Bankist was one year ago. The second best is
+            today!
+          </h2>
+          <button class="open-footer" onclick="openModal()" type="button">
+            Open your free account today!
+          </button>
+        </div>
+        <div class="links-footer">
+          <ul class="links">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Tearms of Use</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Careare</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="icon-footer">
+            <img src="./img/icon.png" alt="icon" />
+          </div>
+          <p>Create by Maaly ✔</p>
+        </div>
+      </footer>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <h2>Open your bank account in just 5 minutes</h2>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" />
+          </div>
+
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" />
+          </div>
+
+          <button class="submit-btn">Next Step →</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
